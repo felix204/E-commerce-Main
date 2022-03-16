@@ -76,6 +76,14 @@
   }
 }
 
+header{
+  background-image: url(/e-commerce2/img/background-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
