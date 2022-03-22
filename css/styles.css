@@ -76,6 +76,24 @@
   }
 }
 
+/* Back to Top */
+#backToTop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+  
+}
+
+#backToTop img {
+  width: 45px;
+}
+
+
+
 header{
   background-image: url(/img/background-image-1.jpg);
   background-repeat: no-repeat;

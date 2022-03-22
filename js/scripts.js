@@ -5,3 +5,31 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+
+// Back to Top
+
+
+$(document).ready(function(){
+
+    $(window).scroll(function(){
+
+        if($(window).scrollTop()>150){
+            $("#backToTop").fadeIn();
+        }else{
+            $("#backToTop").fadeOut();
+        }
+
+    });
+
+
+    $("#backToTop").click(function(){
+        
+        $("html,body").animate({scrollTop:0},700);
+
+        return false;
+
+    });
+
+
+});
