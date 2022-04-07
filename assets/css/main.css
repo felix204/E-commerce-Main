@@ -192,6 +192,11 @@ p:last-child {
 
 ----------------------------------------------------------------------------- */
 
+.product-lists{
+    
+    height: 100% !important; 
+}
+
 .loader {
     bottom: 0;
     height: 100%;
@@ -1294,6 +1299,8 @@ div.owl-controls div.owl-nav div:hover {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    width: 150px;
+    height: 250px;
 }
 
 .product-image img:hover {
