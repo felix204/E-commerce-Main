@@ -172,8 +172,6 @@
 
 
 // Products
-
-
 const getData = async () => {
     const response = await fetch('https://fakestoreapi.com/products/');
     const JsonData = await response.json();
@@ -185,7 +183,7 @@ const getData = async () => {
         JsonData.forEach(product => {
             productContent +=
                 `
-                <div class="col-lg-3 text-center p-3 mt-5" >
+                <div class="col-lg-3 text-center p-3 mt-5" data-id="${product.id}">
                     <div class="single-product-item">
                         <div class="product-image">
                             <img src="${product.image}" alt="asd">
@@ -193,7 +191,7 @@ const getData = async () => {
                     </div>
                     <h3 class="lead">${product.title.substring(0,10)}</h3>
                     <p class="product-price">$${product.price}</p>
-                    <a href="single-product.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Ürüne Git</a>
+                    <a href="single-product.html?id=${product.id}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Ürüne Git</a>
                 </div>
             `;
 
@@ -207,9 +205,44 @@ const getData = async () => {
 }
 
 
-getData();
+//single product
+function singleProduct(productID) {
+    if (productID) {
 
+            const response = fetch('https://fakestoreapi.com/products/' + productID).then( async (response) => {
+                let product = await response.json();
+                
+                var productContent =
+                        `
+                        <div class="col-md-5">
+                            <div class="single-product-img">
+                                <img src="${product.image}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="single-product-content">
+                                <h3 class="product-title"> ${product.title.substring(0,10)} </h3>
+                                <p class="single-product-pricing"><span>Per Kg</span> ${product.price}</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.</p>
+                                <div class="single-product-form">
+                                    <form action="index.html">
+                                        <input type="number" placeholder="0">
+                                    </form>
+                                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                                    <p><strong>Categories: </strong>Fruits, Organic</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
 
+                jQuery(".single-product-content").html(productContent);
+                
+            });
+
+        } else {
+            console.log("Error productID!");
+        }
+}
 
 
 
