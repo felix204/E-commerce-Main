@@ -14,6 +14,12 @@ Version: 1.0
 
 ----------------------------------------------------------------------------- */
 
+
+.form-control:focus{
+    border-color: #d1ce8a !important;
+    box-shadow: 0 0 0 0.2rem rgba(216, 227, 147, 0.25) !important;
+}
+
 html {
     font-size: 14px;
     font-weight: 400;
