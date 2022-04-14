@@ -105,94 +105,90 @@
 
 
     <div class="container">
-        <div class="row p-5 ">
-            <form class="col-md-5 p-3 col-sm-12" style="left: 50px;">
-                <h5 class="text-center text-warning">Üyelik Bilgilerim</h5>
-                <hr class="mb-5">
-                <!-- Email input -->
-                <div class="form-outline mb-2 row p-3">
-                    <div class="col-6"><input type="text" id="form1Example1" class="form-control rounded-pill"
-                            placeholder="Adınız" />
+        <div class="row justify-content-around">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <form class="mt-5 mb-5 pt-2">
+                    <h5 class="text-center text-warning">Üyelik Bilgilerim</h5>
+                    <hr class="mb-5">
+                    <!-- Email input -->
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <input type="text" id="form1Example1" class="form-control rounded-pill"
+                                placeholder="Adınız" />
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="form1Example1" class="form-control rounded-pill"
+                                placeholder="Soyadınız" />
+                        </div>
                     </div>
-                    <div class="col-6"><input type="text" id="form1Example1" class="form-control rounded-pill"
-                            placeholder="Soyadınız" />
+                    <div class="form-group">
+                        <input type="email" id="form1Example1" class="form-control rounded-pill" placeholder="E-mail" />
                     </div>
-                </div>
-
-                <!-- Email input -->
-
-                <div class="form-outline col-12">
-                    <input type="email" id="form1Example1" class="form-control rounded-pill" placeholder="E-mail" />
-                </div>
-                <div class="form-outline row p-3">
-                    <div class=" col-6">
-                        <input type="text" name="phone-number" id="" class="form-control rounded-pill"
-                            placeholder="Cep Telefonu">
+                    <div class="form-group row">
+                        <div class="col-8">
+                            <input type="text" name="phone-number" id="" class="form-control rounded-pill"
+                                placeholder="Cep Telefonu">
+                        </div>
+                        
                     </div>
-                    <div class="col-6">
-                        <button class="btn btn-warning rounded-pill">Güncelle</button>
+                    <div class="form-group row">
+                        <div class=" col-4 ">
+                            <input type="text" class="form-control rounded-pill" placeholder="Gün">
+                        </div>
+                        <div class=" col-4 ">
+                            <input type="text" class="form-control rounded-pill" placeholder="Ay">
+                        </div>
+                        <div class=" col-4 ">
+                            <input type="text" class="form-control rounded-pill" placeholder="Yıl">
+                        </div>
                     </div>
-                </div>
-                <div class="form-outline row p-3 ">
-                    <div class=" col-4 ">
-                        <input type="text" class="form-control rounded-pill" placeholder="Gün">
+                    <div class="form-group d-flex pl-3">
+                        <div class="form-check col-3">
+                            <input class="form-check-input" type="radio" value="erkek" name="cinsiyet" id="form1Example1" />
+                            <label class="form-check-label" for="form1Example3">Erkek </label>
+                        </div>
+                        <div class="form-check col-3">
+                            <input class="form-check-input" type="radio" value="kadın" name="cinsiyet" id="form1Example2"
+                                checked />
+                            <label class="form-check-label" for="form1Example3"> Kadın </label>
+                        </div>
                     </div>
-                    <div class=" col-4 ">
-                        <input type="text" class="form-control rounded-pill" placeholder="Ay">
+                    <div class="form-group justify-content-end d-flex">
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-warning px-5">Kaydet</button>
                     </div>
-                    <div class=" col-4 ">
-                        <input type="text" class="form-control rounded-pill" placeholder="Yıl">
-                    </div>
-                </div>
-                <div class="form-outline row p-2 ">
-                    <div class="form-check col-2 text-right">
-                        <input class="form-check-input" type="radio" value="erkek" name="cinsiyet" id="form1Example1" />
-                        <label class="form-check-label" for="form1Example3">Erkek </label>
-                    </div>
-                    <div class="form-check col-10 text-left">
-                        <input class="form-check-input" type="radio" value="kadın" name="cinsiyet" id="form1Example2"
-                            checked />
-                        <label class="form-check-label" for="form1Example3"> Kadın </label>
-                    </div>
-                </div>
+                </form>
+            </div>
 
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <form class="mt-5 mb-5 pt-2">
 
+                    <h5 class="text-center text-warning">Şifre Güncelleme</h5>
+                    <hr class="mb-5">
 
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <div class="col-12"><input type="password" id="form1Example2" class="form-control rounded-pill"
+                                placeholder="Şu Anki Şifre" />
+                        </div>
+                        <div class="col-12 my-4"><input type="password" id="form1Example2" class="form-control rounded-pill"
+                                placeholder="Yeni Şifre" /></div>
+                        <div class="col-12"><input type="password" id="form1Example2" class="form-control rounded-pill"
+                                placeholder="Yeni Şifre (Tekrar)" />
+                        </div>
 
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-warning d-inline-block px-5 mr-5">Kaydet</button>
-            </form>
-
-            <form class="col-md-5 p-3 col-sm-12" style="left: 140px;">
-
-                <h5 class="text-center text-warning">Şifre Güncelleme</h5>
-                <hr class="mb-5">
-
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                    <div class="col-12"><input type="password" id="form1Example2" class="form-control rounded-pill"
-                            placeholder="Şu Anki Şifre" />
-                    </div>
-                    <div class="col-12 my-4"><input type="password" id="form1Example2" class="form-control rounded-pill"
-                            placeholder="Yeni Şifre" /></div>
-                    <div class="col-12"><input type="password" id="form1Example2" class="form-control rounded-pill"
-                            placeholder="Yeni Şifre (Tekrar)" />
                     </div>
 
-                </div>
+                    <!-- Submit button -->
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-warning d-inline-block px-5 mr-5">Güncelle</button>
+                    </div>
 
-                <!-- Submit button -->
-                <div class="text-right">
-                    <button type="submit" class="btn btn-warning d-inline-block px-5 mr-5">Güncelle</button>
-                </div>
-
-            </form>
-
-
-
+                </form>
+            </div>
 
         </div>
-
     </div>
 
     <div class="container">
@@ -204,13 +200,13 @@
             <form class=" form-outline col-md-12 col-sm-">
                 <div class="form-outline mb-2 row p-3">
                     <div class="col-3">
-                        <h6>Sipariş Detayı</h6>
+                        <h6>Sipariş Tarihi</h6>
                     </div>
                     <div class="col-3">
-                        <h6>Sipariş Detayı</h6>
+                        <h6>Sipariş Özeti</h6>
                     </div>
                     <div class="col-3">
-                        <h6>Sipariş Detayı</h6>
+                        <h6>Sipariş Tutarı</h6>
                     </div>
                     <div class="col-3">
                         <button type="submit" class="btn btn-warning d-inline-block px-5 mr-5">Sipariş Detayı</button>

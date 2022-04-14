@@ -109,23 +109,23 @@
 
     <div class="container p-5">
 
-        <div class="row ">
+        <div class="row justify-content-around">
             
-            <form class="col-md-6 p-3 col-sm-12">
+            <form class="col-lg-4 col-md-6 p-3 col-sm-12">
 
                 <h5 class="text-center text-warning">Giriş Yap</h5>
                 <hr class="mb-5">
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                     
-                    <input type="email" id="form1Example1" class="form-control" placeholder="E-mail"/>
+                    <input type="email" id="form1Example1" class="form-control rounded-pill" placeholder="E-mail"/>
                     
                 </div>
     
                 <!-- Password input -->
                 <div class="form-outline mb-4">
                     
-                    <input type="password" id="form1Example2" class="form-control" placeholder="Şifre"/>
+                    <input type="password" id="form1Example2" class="form-control rounded-pill" placeholder="Şifre"/>
                     
                 </div>
     
@@ -146,30 +146,34 @@
                 </div>
     
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-warning btn-block">Giriş Yap</button>
+                <div class="form-group justify-content-end d-flex">
+                    <button type="submit" class="btn btn-warning px-5">Giriş Yap</button> 
+                </div>
+
+                
             </form>
 
             
 
-            <form class="col-md-6 p-3 col-sm-12">
+            <form class="col-lg-4 col-md-6 p-3 col-sm-12">
                 <h5 class="text-center text-warning">Kayıt Ol</h5>
                 <hr class="mb-5">
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="text" id="form1Example1" class="form-control" placeholder="Ad-Soyad" />
+                    <input type="text" id="form1Example1" class="form-control rounded-pill" placeholder="Ad-Soyad" />
                 </div>
                 <div class="form-outline mb-4">
-                    <input type="email" id="form1Example1" class="form-control" placeholder="E-mail" />
+                    <input type="email" id="form1Example1" class="form-control rounded-pill" placeholder="E-mail" />
                 </div>
                 <div class="form-outline mb-4">
-                    <input type="text" id="form1Example1" class="form-control" placeholder="Adres" />
+                    <input type="text" id="form1Example1" class="form-control rounded-pill" placeholder="Adres" />
                 </div>
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="form1Example2" class="form-control" placeholder="Şifre" />
+                    <input type="password" id="form1Example2" class="form-control rounded-pill" placeholder="Şifre" />
                 </div>
                 <div class="form-outline mb-4">
-                    <input type="password" id="form1Example2" class="form-control" placeholder="Şifre Tekrar" />
+                    <input type="password" id="form1Example2" class="form-control rounded-pill" placeholder="Şifre Tekrar" />
                 </div>
     
                 <!-- 2 column grid layout for inline styling -->
@@ -189,7 +193,12 @@
                 </div>
     
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-warning btn-block">Kayıt Ol</button>
+
+                <div class="form-group justify-content-end d-flex">
+                    <button type="submit" class="btn btn-warning px-5">Kayıt Ol</button>
+                </div>
+
+                
             </form>
 
         </div>
