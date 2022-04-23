@@ -16,8 +16,8 @@ Version: 1.0
 
 
 .form-control:focus{
-    border-color: #d1ce8a !important;
-    box-shadow: 0 0 0 0.2rem rgba(216, 227, 147, 0.25) !important;
+    border-color:  !important;
+    box-shadow: 0 0 0 0.2rem rgba(103, 95, 255, 0.25) !important;
 }
 
 html {
