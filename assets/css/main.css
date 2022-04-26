@@ -1,20 +1,3 @@
-/*
-Template Name: Fruitkha - Responsive Bootstrap4 Shop Template
-Template URI: 
-Description: Bootstrap template for fruits or any other kind of shop
-Author: Imran Hossain
-Author URI: https://imransdesign.com/
-Version: 1.0
-*/
-
-
-/* -----------------------------------------------------------------------------
-
-# Base - Genral & Typography
-
------------------------------------------------------------------------------ */
-
-
 .form-control:focus{
     border-color:  !important;
     box-shadow: 0 0 0 0.2rem rgba(103, 95, 255, 0.25) !important;
@@ -50,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: #F28123;
+    color: #235af2;
     text-decoration: none;
 }
 
@@ -1251,7 +1234,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #051922;
-    color: #F28123;
+    color: rgb(24, 178, 250);
 }
 
 div.owl-controls,
@@ -1305,8 +1288,8 @@ div.owl-controls div.owl-nav div:hover {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    width: 150px;
-    height: 250px;
+    width:70%;
+    height: 150px;
 }
 
 .product-image img:hover {
@@ -1536,8 +1519,8 @@ body {
 }
 
 input[type="submit"] {
-    background-color: #F28123;
-    color: #051922;
+    background-color: rgb(24, 178, 250);
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 15px;
@@ -1658,13 +1641,13 @@ div.owl-controls,
     display: block;
     font-size: 24px;
     margin-right: 15px;
-    color: #F28123;
+    color: rgb(24, 178, 250);
     width: 65px;
     height: 65px;
     text-align: center;
     line-height: 60px;
-    border: 2px #F28123 dotted;
-    border-radius: 999px;
+    border: 2px #238ef286 dotted;
+    border-radius: 25px;
 }
 
 
@@ -2274,6 +2257,7 @@ a.video-play-btn {
     margin-bottom: 10px;
 }
 
+
 .single-team-item h4 span {
     font-size: 70%;
     display: block;
@@ -2482,7 +2466,7 @@ ul.social-link-team li a {
 }
 
 .product-image img {
-    width: 90%;
+    width: 110px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -2682,12 +2666,14 @@ tr.total-data td strong {
 
 .coupon-form-wrap form p input[type=text] {
     border: 1px solid #ddd;
-    color: #051922;
+    color: #295f79;
     padding: 15px;
     width: 100%;
     border-radius: 5px;
     font-size: 15px;
 }
+
+
 
 .card.single-accordion {
     margin-bottom: 15px;
